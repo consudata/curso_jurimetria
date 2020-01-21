@@ -2,28 +2,43 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 
+<style>
+    @media (max-width: 768px)  {
+        
+        body#pr{
+background-image: url("/img/asas600.png");
+background-size: 1000px;
+background-position-y: 0px;
+background-repeat: no-repeat;
+position:relative;
+}
+iframe#filme {
+    width: 292px;
+    height: 155px;
+    top: -28px;
+    left: -260px;
+    position:relative;
+}
+div#tv {
+    position: relative;
+    background-size: 350px;
+    left: 11px;
+    top: -180px;
+    position:relative;
+}
+}
+</style>
+
 <head>
 
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="generator" content="pandoc" />
 
-
+    <link rel="shortcut icon" type="image/x-icon" href="../docs/index_files/figure-html/icone.jpg" />
 
 
     <title>FAQ</title>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118206200-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-118206200-2');
-</script>
-
 
     <script src="site_libs/jquery/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -57,7 +72,6 @@
                 }, 0);
             }
         }
-
     </script>
 
 
@@ -73,6 +87,7 @@
         
         h2 {
             font-size: 30px;
+            
         }
         
         h3 {
@@ -217,8 +232,6 @@
             margin-left: 10px;
             border-radius: 6px 0 6px 6px;
         }
-
-
     </style>
 
     <script>
@@ -230,10 +243,8 @@
             if (href === "")
                 href = "index.html";
             var menuAnchor = $('a[href="' + href + '"]');
-
             // mark it active
             menuAnchor.parent().addClass('active');
-
             // if it's got a parent navbar menu mark it active as well
             menuAnchor.closest('li.dropdown').addClass('active');
         });
@@ -299,7 +310,6 @@
         $(document).ready(function() {
             window.buildTabsets("TOC");
         });
-
         $(document).ready(function() {
             $('.tabset-dropdown > .nav-tabs > li').click(function() {
                 $(this).parent().toggleClass('nav-tabs-open')
@@ -311,10 +321,20 @@
 
 
 
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<style>
+ 
+#pr{
+background-image: url("/img/asas.jpg");
+background-repeat: no-repeat;
+background-size: 100%;
+}
+    
+</style>
+
+<body id="pr">
 
 
     <div class="container-fluid main-container">
@@ -330,7 +350,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-                    <a class="navbar-brand" href="index.html">Jurimetria aplicada</a>
+                    <a class="navbar-brand" href="index.html">Curso R+postgreSQL</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -341,24 +361,40 @@
                             <a href="syllabus.html">Ementa</a>
                         </li>
                         <li>
-                            <a href="bio.html">Biografia</a>
+                            <a target="_blank" href="bio.html">Biografia</a>
                         </li>
                         <li>
                             <a href="faq.html">FAQ</a>
                         </li>
                         <li>
-                            <a href="notes/index.html">Material</a>
-                        </li>
-                        <li>
-                            <a href="/presentation.html">Apresentação</a>
-                        </li>
+                          <a href="presentation.html">Apresentação</a>
+                      </li>
+                    
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a style="background-color:rgb(241, 238, 8);color: black; padding:10px;
-                             box-shadow: 2px 2px 2px rgba(0,0,0,.50); margin-top: 10px;"
-                             href="inscricao.html"><b>Inscreva-se</b></a>
-                        </li>
+                    <style>
+                            li#botaoinsc a {
+                                background-color:rgb(241, 238, 8); 
+                                color: black;
+                                 padding:10px;
+                                    box-shadow: 2px 2px 2px rgba(0,0,0,.50); 
+                                    margin-top: 10px;
+                            }
+    
+                                li#botaoinsc a:hover {
+                                    color: #ffffff;
+                                    text-decoration: underline;
+                                    background-color:rgb(241, 238, 8); 
+                                    color: black; 
+                                    padding:10px;
+                                    box-shadow: 2px 2px 2px rgba(0,0,0,.50); 
+                                    margin-top: 10px;
+                                }
+                        </style>
+    
+                        <ul class="nav navbar-nav navbar-right">
+                            <li id="botaoinsc">
+                                    <a href="inscricao.html"><b>Inscreva-se</b></a>
+                            </li>
                     </ul>
                     
                     
@@ -374,63 +410,43 @@
 
         </div>
 
+        <style>
+        #tv {
+    width: 836px;
+    height: 800px;
+    margin: auto;
+    background: url("/img/monitorpng.png") no-repeat 10px;
+    padding: 300px;
+    
+}
+#filme {
+  display: block;
+    position: relative;
+    left: -237px;
+    top: -205px;
+    width: 718px;
+    border-radius: 10px;
+    height: 380px;
+}
+  #h2pr{
+    
+    color: white;
+  }
+        </style>
+            <h2 id="h2pr"><b>Apresentação do curso</b></h2>
+
         
+        <div id="tv">
 
+          <iframe id="filme" src="https://youtu.be/0UHdoSNhEOo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        <div id="perguntas-mais-frequentes" class="section level2"><br/>
-
-
-            <h2>Perguntas mais frequentes</h2><br/>
-
-            <div id="preciso-de-notebook" class="section level3">
-                <h3>Preciso levar notebook?</h3>
-                <p>Sim, precisa.</p>
-            </div>
-
-            <div id="quem-pode-se-inscrever-no-curso" class="section level3">
-                <h3>Quem pode se inscrever no curso?</h3>
-                <p>Qualquer pessoa pode participar do curso, mas ele é particularmente destinado a pessoas formadas em direito.</p>
-            </div>
-            <div id="eu-preciso-conhecer-estatistica-para-participar" class="section level3">
-                <h3>Eu preciso conhecer estatística para participar?</h3>
-                <p>Não. As partes do curso que envolvem análise estatística serão predominantemente conceituais. O curso focará principalmente na coleta e organização dos dados. A parte analítica serve mais para que os participantes tenham dimensão das possibilidades
-                    de análise. Para aplicar métodos estatísticos é necessário treinamento específico e de longa duração.</p>
-                <p>Dito isso, os participante com noções básicas de estatística e machine learning seguramente aproveitarão melhor o curso.</p>
-            </div>
-            <div id="eu-preciso-saber-programar-em-r-para-participar-do-curso" class="section level3">
-                <h3>Eu preciso saber programar em R para participar do curso?</h3>
-                <p>Não. A primeira aula servirá para familiarizá-la com o R. Nas demais aulas, iremos usar ferramentas intuitivas que não exigem aprofundamento.</p>
-            </div>
-            <div id="mas-eu-vou-aprender-a-programar-em-r-durante-o-curso" class="section level3">
-                <h3>Mas eu vou aprender a programar em R durante o curso?</h3>
-                <p>Você vai familiarizar-se com o ambiente do R, o que certamente servirá de incentivo para você continuar aprendendo.</p>
-            </div>
-            <div id="por-que-nao-usar-python-em-vez-de-r" class="section level3">
-                <h3>Por que não usar Python em vez de R?</h3>
-                <p>A principal razão é porque o instrutor é especialista em R. Além disso, a jurimetria no Brasil foi desenvolvida inicialmente no ambiente R.</p>
-                <p>Dito isso, nada impede que você aplique o aprendido em outra linguagem.</p>
-            </div>
-            <div id="eu-preciso-ter-o-r-instalado-no-meu-computador-para-participar-do-curso" class="section level3">
-                <h3>Eu preciso ter o R instalado no meu computador para participar do curso?</h3>
-                <p>Não. Para evitar dificuldades com instalações e queixas como: “Por que não funciona no meu computador?”, eu optei por oferecer a todos os inscritos acesso a uma máquina na núvem com o R e todas as dependências já instalados e inclusive
-                    os tutoriais.</p>
-                <p>No entanto, para garantir que você instale o R também no seu computador, eu dedicarei um tempo exclusivo para ajudar cada um dos participantes interessados a instalar o R no Windows, Mac ou Linux.</p>
-            </div>
-            <div id="eu-terei-acesso-a-algum-material-didatico" class="section level3">
-                <h3>Eu terei acesso a algum material didático?</h3>
-                <p>Sim. Mesmo que você não participe do curso, o material didático é de livre acesso. Pode usar, alterar, partilhar, só não pode vender. O material já está pronto, mas como só recentente eu decidi o que entra e o que não entra, nos próximos
-                    dias você terá acesso ao conteúdo completo.</p>
-            </div>
-            <div id="o-curso-ira-realmente-cobrir-todos-os-topicos-mencionados-no-programa" class="section level3">
-                <h3>O curso irá realmente cobrir todos os tópicos mencionados no programa?</h3>
-                <p>Sim. Ainda assim, como medida preventiva, caso não algum tópico não seja propriamente transmitido por falta de tempo, eu fiz uma pré-reserva do espaço para mais um período de oito horas.</p>
-            </div>
         </div>
 
 
 
 
     </div>
+    
 
     <script>
         // add bootstrap table styles to pandoc tables
@@ -454,4 +470,4 @@
 
 </body>
 
-</html>
+</html> 
